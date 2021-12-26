@@ -10,21 +10,22 @@
 </head>
 
 <body>
-	<h2 id="clock">00:00</h2>
-	<form id="login-form" class="hidden">
-		<input type="text" required maxlength="10" placeholder="What is your name?">
-		<button>Log In</button>
-	</form>
-	<h1 id="greeting" class="hidden"></h1>
-	<form id="todo-form">
-		<input type="text" placeholder="Write a To Do and Press Enter">
-	</form>
-	<ul id="todo-list"></ul>
-	<div id="quote">
+	<div id="weather">
+		<span></span>
 		<span></span>
 		<span></span>
 	</div>
-	<div id="weather">
+	<h2 id="clock">00:00</h2>
+	<form id="login-form" class="hidden">
+		<input type="text" required maxlength="11" placeholder="이름을 적어주세요" onfocus="this.placeholder = ''" onblur="this.placeholder = '이름을 적어주세요'">
+		<button></button>
+	</form>
+	<h1 id="greeting" class="hidden"></h1>
+	<form id="todo-form">
+		<input type="text" placeholder="오늘은 무엇을 할까요?" onfocus="this.placeholder = ''" onblur="this.placeholder = '오늘은 무엇을 할까요?'">
+	</form>
+	<ul id="todo-list"></ul>
+	<div id="quote">
 		<span></span>
 		<span></span>
 	</div>
